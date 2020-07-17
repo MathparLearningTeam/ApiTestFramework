@@ -8,6 +8,7 @@ import java.util.Date;
 @Data
 public class CreateAccountResponse {
     private long accountId;
+    private String email;
     private String fullName;
     private Date creationDate;
 

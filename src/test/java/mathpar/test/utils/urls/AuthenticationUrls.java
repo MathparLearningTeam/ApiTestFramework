@@ -1,12 +1,12 @@
 package mathpar.test.utils.urls;
 
 public class AuthenticationUrls {
-    public static final String ACCOUNT_URL = "/account/";
-    public static final String IS_EMAIL_AVAILABLE_URL = "/account/emailAvailable";
+    public static final String ACCOUNT_URL = "/api/";
+    public static final String IS_EMAIL_AVAILABLE_URL = "/api/emailAvailable";
 
-    public static final String AUTHENTICATE_URL = "/account/authenticate";
-    public static final String IS_TOKEN_VALID_URL = "/account/tokenValid";
+    public static final String AUTHENTICATE_URL = "/api/authenticate";
+    public static final String IS_TOKEN_VALID_URL = "/api/tokenValid";
 
-    public static final String RESTORE_PASSWORD_URL = "/account/restoreCredentials";
-    public static final String CHANGE_PASSWORD_URL = "/account/changePassword";
+    public static final String RESTORE_PASSWORD_URL = "/api/restoreCredentials";
+    public static final String CHANGE_PASSWORD_URL = "/api/changePassword";
 }

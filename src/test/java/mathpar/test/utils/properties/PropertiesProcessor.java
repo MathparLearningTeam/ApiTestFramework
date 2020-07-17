@@ -37,7 +37,9 @@ public class PropertiesProcessor {
 
     public static void loadProperties(){
         try {
-            var resource = PropertiesProcessor.class.getClassLoader().getResource("application.properties");
+            var profileName = System.getProperty("profile");
+            var propertiesFileName="application"+(profileName!=null?"-"+profileName:"")+".properties";
+            var resource = PropertiesProcessor.class.getClassLoader().getResource(propertiesFileName);
             if (resource==null) throw new RuntimeException("Can't find properties file, check existence");
             var allProperties = new String(resource.openStream().readAllBytes()).split("\n");
             properties = new HashMap<>(allProperties.length);
